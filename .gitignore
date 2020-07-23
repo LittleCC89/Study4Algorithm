@@ -1,0 +1,5 @@
+##ignore this file##
+#git config --global core.autocrlf false#
+insertion
+*.o
+*.a

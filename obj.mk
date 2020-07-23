@@ -1,0 +1,1 @@
+obj = Insertion_sort.o public.o
