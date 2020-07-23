@@ -1,4 +1,4 @@
-//¹é²¢ÅÅĞò
+//å½’å¹¶æ’åº
 #include <stdio.h>
 #include <memory.h>
 #include <stdlib.h>
@@ -59,9 +59,9 @@ void Merge_sort(int Arr[], int lenth){
 
 //test
 int main(){
-    //int Arr[] = {6,5,4,3,2,1}; //×î»µÇé¿ö,±éÀú´ÎÊıÎª n^2
-    //int Arr[] = {1,2,3,4,5,6};   //×îºÃÇé¿ö,±éÀú´ÎÊıÎª n^2
-    int Arr[] = {7,4,2,9,8,10};   //×îºÃÇé¿ö,±éÀú´ÎÊıÎª n
+    //int Arr[] = {6,5,4,3,2,1}; //æœ€åæƒ…å†µ,éå†æ¬¡æ•°ä¸º n^2
+    //int Arr[] = {1,2,3,4,5,6};   //æœ€å¥½æƒ…å†µ,éå†æ¬¡æ•°ä¸º n^2
+    int Arr[] = {7,4,2,9,8,10};   //æœ€å¥½æƒ…å†µ,éå†æ¬¡æ•°ä¸º n
     //ShowArr(Arr, sizeof(Arr)/sizeof(int));
     //printf("Arr_lenth %d\n", sizeof(Arr));
     Merge_sort(Arr, sizeof(Arr)/sizeof(int));
