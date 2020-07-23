@@ -25,11 +25,17 @@ void Bubble(int Arr[], int lenth){
 
 //test
 int main(){
-    //int Arr[] = {6,5,4,3,2,1}; //最坏情况,遍历次数为 n^2
-    //int Arr[] = {1,2,3,4,5,6};   //最好情况,遍历次数为 n^2
-    int Arr[] = {7,4,2,9,8,10};   //最好情况,遍历次数为 n
-    ShowArr(Arr, sizeof(Arr)/sizeof(int));
-    //printf("Arr_lenth %d\n", sizeof(Arr));
-    Bubble(Arr, sizeof(Arr)/sizeof(int));
-    ShowArr(Arr, sizeof(Arr)/sizeof(int));
+    int Arr1[] = {6,5,4,3,2,1};//最坏情况,遍历次数为 n^2
+    int Arr2[] = {1,2,3,4,5,6,7};//最好情况,遍历次数为 n
+
+    //int Arr[] = {1,2,3,4,5,6};   
+    //int Arr[] = {7,4,2,9,8,10};   //
+
+    ShowArr(Arr1, sizeof(Arr1)/sizeof(int));
+    Bubble(Arr1, sizeof(Arr1)/sizeof(int));
+    ShowArr(Arr1, sizeof(Arr1)/sizeof(int));
+
+    ShowArr(Arr2, sizeof(Arr2)/sizeof(int));
+    Bubble(Arr2, sizeof(Arr2)/sizeof(int));
+    ShowArr(Arr2, sizeof(Arr2)/sizeof(int));
 }

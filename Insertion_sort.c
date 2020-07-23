@@ -1,4 +1,4 @@
-//²åÈëÅÅĞò
+//æ’å…¥æ’åº
 
 #include <stdio.h>
 #include "public.h"
@@ -26,11 +26,18 @@ void Insertion(int Arr[], int lenth){
 //test
 
 int main(){
-    int Arr[] = {6,5,4,3,2,1}; //×î»µÇé¿ö,±éÀú´ÎÊıÎª n^2
-    //int Arr[] = {1,2,3,4,5,6};   //×îºÃÇé¿ö,±éÀú´ÎÊıÎª n
-    //int Arr[] = {7,4,2,9,8,10};   //×îºÃÇé¿ö,±éÀú´ÎÊıÎª n
-    ShowArr(Arr, sizeof(Arr)/sizeof(int));
-    //printf("Arr_lenth %d\n", sizeof(Arr));
-    Insertion(Arr, sizeof(Arr)/sizeof(int));
-    ShowArr(Arr, sizeof(Arr)/sizeof(int));
+    int Arr1[] = {6,5,4,3,2,1};//æœ€åæƒ…å†µ,éå†æ¬¡æ•°ä¸º n^2
+    int Arr2[] = {1,2,3,4,5,6,7};//æœ€å¥½æƒ…å†µ,éå†æ¬¡æ•°ä¸º n
+
+    //int Arr[] = {1,2,3,4,5,6};   
+    //int Arr[] = {7,4,2,9,8,10};   //
+
+    ShowArr(Arr1, sizeof(Arr1)/sizeof(int));
+    Insertion(Arr1, sizeof(Arr1)/sizeof(int));
+    ShowArr(Arr1, sizeof(Arr1)/sizeof(int));
+
+    ShowArr(Arr2, sizeof(Arr2)/sizeof(int));
+    Insertion(Arr2, sizeof(Arr2)/sizeof(int));
+    ShowArr(Arr2, sizeof(Arr2)/sizeof(int));
+
 }
