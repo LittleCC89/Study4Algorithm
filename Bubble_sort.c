@@ -24,7 +24,6 @@ void Bubble(int Arr[], int lenth){
 }
 
 //test
-
 int main(){
     //int Arr[] = {6,5,4,3,2,1}; //最坏情况,遍历次数为 n^2
     //int Arr[] = {1,2,3,4,5,6};   //最好情况,遍历次数为 n^2
