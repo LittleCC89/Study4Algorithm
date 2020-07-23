@@ -1,5 +1,7 @@
 ##ignore this file##
 #git config --global core.autocrlf false#
-insertion
+#执行文件#
+*.e
 *.o
 *.a
+
