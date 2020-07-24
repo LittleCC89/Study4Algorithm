@@ -44,20 +44,24 @@ void Build_Max_Heap(int Arr[], int lenth){
 }
 
 void Heap_sort(int Arr[], int lenth){
+    printf("建堆...\n");
     Build_Max_Heap(Arr,lenth);
+    printf("建堆...end\n");
 
     int i = 0;
 
+    printf("排序...\n");
     for(i = lenth -1; i > 0; i--){
         int tmp = Arr[i];
         Arr[i] = Arr[0];
         Arr[0] = tmp;
         Max_Heapify(Arr, i, 0);
     }
+    printf("排序...end\n");
 }
 
 void main(){
-    int Arr[] = {23, 17, 14, 6, 13, 10, 1, 5, 7, 12};
+    int Arr[] = {1, 2, 3, 4, 5, 6, 7};//, 8, 9, 10, 11, 12, 13, 14, 15, 16};
     ShowArr(Arr, sizeof(Arr)/sizeof(int));
     printf("Arr_lenth %d\n", sizeof(Arr)/sizeof(int));
     Heap_sort(Arr, sizeof(Arr)/sizeof(int));
