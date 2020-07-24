@@ -32,12 +32,16 @@ int main(){
     //int Arr[] = {1,2,3,4,5,6};   
     //int Arr[] = {7,4,2,9,8,10};   //
 
+    printf("输入: ");
     ShowArr(Arr1, sizeof(Arr1)/sizeof(int));
     Insertion(Arr1, sizeof(Arr1)/sizeof(int));
+    printf("输出: ");
     ShowArr(Arr1, sizeof(Arr1)/sizeof(int));
 
+    printf("输入: ");
     ShowArr(Arr2, sizeof(Arr2)/sizeof(int));
     Insertion(Arr2, sizeof(Arr2)/sizeof(int));
+    printf("输出: ");
     ShowArr(Arr2, sizeof(Arr2)/sizeof(int));
 
 }

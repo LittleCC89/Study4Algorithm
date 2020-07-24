@@ -59,11 +59,21 @@ void Merge_sort(int Arr[], int lenth){
 
 //test
 int main(){
-    int Arr[] = {7, 6,5,4,3,2,1}; //最坏情况,遍历次数为 n^log(n)
-    //int Arr[] = {1,2,3,4,5,6};   //最好情况,遍历次数为 n*log(n)
+    int Arr1[] = {6,5,4,3,2,1};//最坏情况,遍历次数为 n*log(n)
+    int Arr2[] = {1,2,3,4,5,6,7};//最好情况,遍历次数为 n*log(n)
+
+    //int Arr[] = {1,2,3,4,5,6};   
     //int Arr[] = {7,4,2,9,8,10};   //
-    ShowArr(Arr, sizeof(Arr)/sizeof(int));
-    printf("Arr_lenth %d\n", sizeof(Arr)/sizeof(int));
-    Merge_sort(Arr, sizeof(Arr)/sizeof(int));
-    ShowArr(Arr, sizeof(Arr)/sizeof(int));
+
+    printf("输入: ");
+    ShowArr(Arr1, sizeof(Arr1)/sizeof(int));
+    Merge_sort(Arr1, sizeof(Arr1)/sizeof(int));
+    printf("输出: ");
+    ShowArr(Arr1, sizeof(Arr1)/sizeof(int));
+
+    printf("输入: ");
+    ShowArr(Arr2, sizeof(Arr2)/sizeof(int));
+    Merge_sort(Arr2, sizeof(Arr2)/sizeof(int));
+    printf("输出: ");
+    ShowArr(Arr2, sizeof(Arr2)/sizeof(int));
 }
